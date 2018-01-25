@@ -7,6 +7,7 @@ import { AppComponent }  from './app.component';
 import { HeroFormComponent } from './hero-form/hero-form.component';
 import { HeroFormComponent1 } from './hero-form1/hero-form1.component';
 import { HeroFormComponent2 } from './hero-form2/hero-form2.component';
+import { HeroFormComponent3 } from './hero-detail/hero-detail.component';
 @NgModule({
   imports: [
     BrowserModule,
@@ -17,6 +18,7 @@ import { HeroFormComponent2 } from './hero-form2/hero-form2.component';
     HeroFormComponent
     HeroFormComponent2
     HeroFormComponent1
+    HeroFormComponent3
   ],
   providers: [],
   bootstrap: [ AppComponent ]
@@ -24,8 +26,10 @@ import { HeroFormComponent2 } from './hero-form2/hero-form2.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  directives: [HeroFormComponent3, HeroFormComponent]
 })
 export class AppComponent {
   title = 'Prueba';
+
 }

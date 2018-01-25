@@ -4,5 +4,6 @@ constructor(
     public apellidos: string,
     public fecha: string,
     public secret: string
-  ) {  }
+  ) {  
+
 }
